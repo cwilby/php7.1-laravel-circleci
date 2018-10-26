@@ -1,7 +1,7 @@
 FROM circleci/php:7.1-stretch-node-browsers
 
 RUN echo "deb http://mirrors.kernel.org/ubuntu/ xenial main" | sudo tee -a /etc/apt/sources.list \
-&& sudo apt-get update && sudo apt-get install -y \
+&& sudo apt-get update && sudo apt-get install -y --allow-unauthenticated \
   zlib1g-dev \
   libsqlite3-dev \
   mysql-client \
