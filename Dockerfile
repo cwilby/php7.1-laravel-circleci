@@ -19,6 +19,7 @@ RUN sudo docker-php-ext-install zip
 RUN sudo docker-php-ext-install soap
 RUN sudo docker-php-ext-install mbstring 
 RUN sudo docker-php-ext-install pdo_mysql
+RUN sudo docker-php-ext-install gd
 RUN sudo pecl install mongodb && sudo docker-php-ext-enable mongodb 
 RUN sudo pecl install imagick && sudo docker-php-ext-enable imagick
 
