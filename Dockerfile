@@ -23,5 +23,7 @@ RUN sudo docker-php-ext-install gd
 RUN sudo pecl install mongodb && sudo docker-php-ext-enable mongodb 
 RUN sudo pecl install imagick && sudo docker-php-ext-enable imagick
 
+RUN npm install -g jest
+
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["/bin/sh"]
